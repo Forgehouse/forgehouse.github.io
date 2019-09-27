@@ -21,6 +21,10 @@ textarea {
     padding-right:0;
 }
 
+.thumbnail{
+    border:0;
+}
+
 .row {
     padding-left: 0;
     padding-right: 0;
@@ -42,32 +46,44 @@ textarea {
 }
 
 .panel {
-    min-height: 100vh;
     margin-bottom: 0;
     border:0;
 }
 
-.panelOne {
+.heading {
     background: url(../imgs/sakura.png) left top repeat;
     background: url(../imgs/confectionary.png) left top repeat;
     background: url(../imgs/footer_lodyas.png) left top repeat;
     background: url(../imgs/symphony.png) left top repeat;
     padding-top: 5vh;
+    min-height: 100vh;
 }
 
-.panelTwo {
+.services {
     /*background: url(../imgs/confectionary.png) left top repeat;*/
 }
 
-.panelThree {
+.reviews {
+    background: url(../imgs/symphony.png) left top repeat;
+}
+
+.item > img{
+    display: initial !important;
+}
+
+.portfolio {
     color:white;
     background: url(../imgs/footer_lodyas.png) left top repeat;
 }
 
-.panelFour {
+.team {
     /*background: url(../imgs/symphony.png) left top repeat;*/
 }
 
-.panelFive {
+.contact {
     background: url(../imgs/sakura.png) left top repeat;
+}
+
+.footer {
+    background: url(../imgs/symphony.png) left top repeat;
 }
