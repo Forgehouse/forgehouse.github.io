@@ -7,4 +7,7 @@ function scrollToId(id) {
         scrollTop: $("#" + id).offset().top - 50
     }, 2000);
 }
-var wow = new WOW();
+
+var wow = new WOW({
+    mobile: false
+});
