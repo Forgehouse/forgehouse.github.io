@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/site.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
@@ -13,7 +14,7 @@
 </head>
 <html>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -21,60 +22,71 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="#" class="navbar-brand">Forgehouse Consultancy</a>
+                <a onclick="scrollToId('Header')" class="navbar-brand"><img alt="Brand" style="width:150px;" src="imgs/brand.jpg"></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a onclick="scrollToId('Services')">Services</a></li>
+                    <li><a onclick="scrollToId('Portfolio')">Portfolio</a></li>
+                    <li><a onclick="scrollToId('Team')">The Team</a></li>
+                    <li><a onclick="scrollToId('Contact')">Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="body-content">
-        <div id="content">
-            <div class="row wow animated bounceInUp panelOne" id="Header">
-                <div class="panel panel-default">
+    <div class="">
+        <div class="row" id="Header">
+            <div class="col-sm-12">
+                <div class="panel panel-default panelOne text-center">
                     <div class="panel-body">
-                        Basic panel example
-                    </div>
-                </div>
-            </div>
-            <div class="row wow animated bounceInUp panelTwo" id="Services">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        Basic panel example
-                    </div>
-                </div>
-            </div>
-            <div class="row wow animated bounceInUp panelThree" id="Portfolio">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        Basic panel example
-                    </div>
-                </div>
-            </div>
-            <div class="row wow animated bounceInUp panelFour" id="The Team">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        Basic panel example
-                    </div>
-                </div>
-            </div>
-            <div class="row wow animated bounceInUp panelFive" id="Contact Us">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        Basic panel example
+                        <figure>
+                            <img src="imgs/logo.png" class="logo animated fadeInDown " />
+                        </figure>
+                        <h1 class="animated fadeInDown header-text">Forgehouse Consultancy Ltd.</h1>
+                        <ul class="header-list">
+                            <li><br /></li>
+                            <li><i class="animated fadeInUp delay-1s">We do some stuff and things about tech that you might like</i></li>
+                            <li><br /></li>
+                        </ul>
+                        <a class="btn btn-success btn-lg animated fadeInUp delay-1s" onclick="scrollToId('Services')">Lets get started</a>
                     </div>
                 </div>
             </div>
         </div>
-        <hr />
-        <footer>
-            <p>&copy; <span id="copyrightDate"></span> - Forgehouse Consultancy</p>
-        </footer>
+        <div class="row wow animated bounceInRight  text-center" id="Services">
+            <div class="panel panel-default panelTwo">
+                <div class="panel-body">
+                    <div class="">
+                        Services
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row wow animated bounceInLeft  text-center" id="Portfolio">
+            <div class="panel panel-default panelThree">
+                <div class="panel-body">
+                    Portfolio
+                </div>
+            </div>
+        </div>
+        <div class="row wow animated bounceInRight  text-center" id="Team">
+            <div class="panel panel-default panelFour">
+                <div class="panel-body">
+                    Team
+                </div>
+            </div>
+        </div>
+        <div class="row wow animated bounceInUp  text-center" id="Contact">
+            <div class="panel panel-default panelFive">
+                <div class="panel-body">
+                    Contact
+                </div>
+            </div>
+        </div>
     </div>
+    <footer>
+        <p>&copy; <span id="copyrightDate"></span> - Forgehouse Consultancy Ltd.</p>
+    </footer>
     <script>
         setCopyRightDate();
         wow.init();

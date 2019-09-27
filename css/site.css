@@ -1,13 +1,6 @@
 body {
     padding-top: 50px;
-    padding-bottom: 20px;
 }
-
-/* Set padding to keep content from hitting the edges */
-/*.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}*/
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
@@ -23,44 +16,58 @@ textarea {
     max-width: 280px;
 }
 
-.banner {
-    position: relative;
-    text-align: center;
-    color: white;
+.col-sm-12{
+    padding-left:0;
+    padding-right:0;
 }
 
-.banner-text {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
+.row {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
-.panel{
-    height: 100vh;
-    margin-bottom:0;
+.navbar-default {
+    background-color: white;
+}
+
+.header-list{
+    list-style:none;
+    padding:0;
+}
+
+.logo {
+    width: 130px;
+}
+
+.panel {
+    min-height: 100vh;
+    margin-bottom: 0;
+    border:0;
 }
 
 .panelOne {
-    background-image: linear-gradient(to bottom, #b0d4e3 0%,#88bacf 100%);
-    background-color: none;
+    background: url(../imgs/sakura.png) left top repeat;
+    background: url(../imgs/confectionary.png) left top repeat;
+    background: url(../imgs/footer_lodyas.png) left top repeat;
+    background: url(../imgs/symphony.png) left top repeat;
+    padding-top: 5vh;
 }
 
 .panelTwo {
-    background-image: linear-gradient(to bottom, #b5bdc8 0%,#828c95 36%,#28343b 100%);
-    background-color: none;
+    /*background: url(../imgs/confectionary.png) left top repeat;*/
 }
 
 .panelThree {
-    background-image: linear-gradient(to bottom, #b0d4e3 0%,#88bacf 100%);
-    background-color: none;
+    color:white;
+    background: url(../imgs/footer_lodyas.png) left top repeat;
 }
 
 .panelFour {
-    background-image: linear-gradient(to bottom, #b5bdc8 0%,#828c95 36%,#28343b 100%);
-    background-color: none;
+    /*background: url(../imgs/symphony.png) left top repeat;*/
 }
 
 .panelFive {
-    background-image: linear-gradient(to bottom, #b0d4e3 0%,#88bacf 100%);
-    background-color: none;
+    background: url(../imgs/sakura.png) left top repeat;
 }
