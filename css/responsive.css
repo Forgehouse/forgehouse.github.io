@@ -3,4 +3,8 @@
     .header-text {
         font-size: 28px;
     }
+
+    .img-cirlce{
+        max-width: 100% !important;
+    }
 }

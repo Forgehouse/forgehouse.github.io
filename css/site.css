@@ -21,8 +21,9 @@ textarea {
     padding-right:0;
 }
 
-.thumbnail{
-    border:0;
+.thumbnail {
+    border: 4px solid #d9534f;
+    margin-bottom: 5px;
 }
 
 .row {
@@ -39,6 +40,10 @@ textarea {
 .header-list{
     list-style:none;
     padding:0;
+}
+
+.header-text{
+    font-size:50px;
 }
 
 .logo {
@@ -59,12 +64,24 @@ textarea {
     min-height: 100vh;
 }
 
+.services-row{
+    /*height: 674px;*/
+}
+
+.portfolio-row{
+    /*height:1523px;*/
+}
+
 .services {
     /*background: url(../imgs/sakura.png) left top repeat;*/
+    background: url(../imgs/footer_lodyas.png) left top repeat;
+    color: white;
+    /*padding-bottom: 40px;*/
 }
 
 .reviews {
-    background: url(../imgs/symphony.png) left top repeat;
+    background: url(../imgs/footer_lodyas.png) left top repeat;
+    color: white;
 }
 
 .item > img{
@@ -72,18 +89,30 @@ textarea {
 }
 
 .portfolio {
-    color: white;
-    background: url(../imgs/footer_lodyas.png) left top repeat;
+    background: url(../imgs/symphony.png) left top repeat;
 }
 
 .team {
-    /*background: url(../imgs/symphony.png) left top repeat;*/
+    background: url(../imgs/symphony.png) left top repeat;
 }
 
 .contact {
-    background: url(../imgs/sakura.png) left top repeat;
+    background: url(../imgs/footer_lodyas.png) left top repeat;
+    color: white;
 }
 
 .footer {
     background: url(../imgs/symphony.png) left top repeat;
+}
+
+.btn-round{
+    border-radius:100%;
+}
+
+.btn-default:hover {
+    color: #d9534f !important;
+}
+
+.img-circle {
+    max-width: 40% !important;
 }
