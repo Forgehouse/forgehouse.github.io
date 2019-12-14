@@ -116,3 +116,7 @@ textarea {
 .img-circle {
     max-width: 40% !important;
 }
+
+.profileText{
+    font-size: 17px;
+}
